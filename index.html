@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nancy's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--NAV BAR SECTION-->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="/" id="navbarLogo">2024</a>
+            <div class="navbarToggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="/" class="navbarLinks"> about </a>
+                </li>
+                <li class="navbarItem">
+                    <a href="/projects.html" class="navbarLinks"> projects </a>
+                </li>
+              
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="mainContainer">
+
+            <!--ABOUT SECTION-->
+
+            <div class="mainContent">
+                <div class="nameAndTextContainer">
+                    <div class="nameContainer">
+                        <h1 id="myFirstName">nancy</h1>
+                        <h1 id="myLastName">dinh</h1>
+                        
+                        <h2 id="resumeLink">download my resume <a href="#" class="resumeLink">here</a></h2>
+                        <br>
+                        <p style = 'line-height: 20px' class="socialsFull">
+                            <img src = 'images/mailicon.png' style='vertical-align: middle; width: 20px; height: 20px;'' />
+                            <a href="#" class="socials"> n4ncy.dinh@gmail.com</a>
+                        </p>
+                       
+                        <p style = 'line-height: 20px' class="socialsFull">
+                            <img src = 'images/github.png' style='vertical-align: middle; width: 20px; height: 20px;'' />
+                            <a target="_blank" href="https://github.com/nn4ncyy" class="socials">GitHub</a>
+                        </p>
+
+                        <p style = 'line-height: 20px' class="socialsFull">
+                            <img src = 'images/linked.png' style='vertical-align: middle; width: 20px; height: 20px;'' />
+                            <a target="_blank" href="https://www.linkedin.com/in/nancy-dinh-1b186913b/" class="socials">LinkedIn</a>
+                        </p>
+
+                    </div>
+                    <div class="aboutText">
+                        <p>
+                            My coding journey began in 2020 when I took my first 
+                            programming class, Introduction to Computing. I was majoring 
+                            in biology, so I took that class with no real objective or 
+                            intentions. As you can imagine, I unexpectedly garnered a 
+                            particular interest in the field.
+                            
+                            <br><br>
+                           
+                            From game development to web technologies, I thrive on exploring the 
+                            boundaries of what's possible in the digital realm. Using technology and 
+                            creativity to garner a greater understanding of the world and its 
+                            interconnected system is something I most look forward to navigating in 
+                            this industry.
+
+                            <br><br>
+                            
+                            In my free time, I enjoy listening to music and watching
+                            movies. I also enjoy crocheting, knitting, and painting.
+                        </p>
+                        <!-- Add the rest of the text here -->
+                    </div>
+                </div>
+                
+            </div>
+            <!-- PROJECTS NAV BAR -->
+            <nav class="stickyNav">
+                <hr>
+                <nav class="projectsNavbar">
+                
+                    <div class="projectsNavbarContainer">
+               
+    
+                        <a href="/" id="projectsNavbarLogo">projects</a>
+                        <div class="projectsNavbarToggle" id="projectsMobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="projectsNavbarMenu">
+                            <li class="projectsNavbarItem">
+                                <a href="#aura" class="projectsNavbarLinks"> aura </a>
+                            </li>
+                            <li class="projectsNavbarItem">
+                                <a href="#bugsnatch" class="projectsNavbarLinks"> bug snatch </a>
+                            </li>
+                            <li class="projectsNavbarItem">
+                                <a href="#munchies" class="projectsNavbarLinks"> munchies </a>
+                            </li>
+    
+                            <li class="projectsNavbarItem">
+                                <a href="#empscheduler" class="projectsNavbarLinks"> employee scheduler </a>
+                            </li>
+    
+                            <li class="projectsNavbarItem">
+                                <a href="#carrental" class="projectsNavbarLinks"> car rental service </a>
+                            </li>
+    
+                            <li class="projectsNavbarItem">
+                                <a href="#compound" class="projectsNavbarLinks"> compound interest calculator </a>
+                            </li>
+                          
+                        </ul>
+                        
+                    </div>
+                    
+                    
+                </nav>
+                <hr>
+            </nav>
+        
+            
+
+            
+
+            <!-- AURA -->
+            <section id="aura">
+                <h1 class="projectHeader">01 aura</h1>
+            </section>
+
+            
+  
+
+            <!-- BUG SNATCH -->
+            <section id="bugsnatch">
+                <h1 class="projectHeader">02 bug snatch</h1>
+            </section>
+
+            <!-- MUNCHIES -->
+            <section id="munchies">
+                <h1 class="projectHeader">03 munchies</h1>
+            </section>
+
+
+            <section id="empscheduler">
+                <h1 class="projectHeader">04 employee scheduler</h1>
+            </section>
+
+            <section id="carrental">
+                <h1 class="projectHeader">05 car rental</h1>
+            </section>
+
+            <section id="compound">
+                <h1 class="projectHeader">06 compound interest</h1>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="navScroller.js"></script>
+</body>
+</html>

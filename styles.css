@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.navBar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    background-color: aqua;
+}
+
+
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    /* background-color: aqua; */
+
+}
+
+#navbarLogo {
+    color: #000;    
+    font-size: 30px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    padding-left: 5rem;
+}
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbarItem{
+    height: 80px;
+}
+
+.navbarLinks {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 30px;
+    color: #000;
+
+}
+
+.navbarLinks:hover{
+    color: #1B1AA7;
+}
+
+.projectsNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    top: 0;
+}
+
+
+.projectsNavbarContainer {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; /* Ensure the container's z-index is lower than the navbar's */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    
+}
+.stickyNav {
+    position: sticky;
+    top: 0; /* Adjust this value as needed */
+    background-color: #fff;
+}
+
+
+#projectsNavbarLogo {
+    color: #000;    
+    font-size: 18px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    padding-left: 5rem;
+}
+
+.projectsNavbarMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.projectsNavbarItem{
+    height: 50px;
+}
+
+.projectsNavbarLinks {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 18px;
+    color: #000;
+
+}
+
+.projectsNavbarLinks:hover{
+    color: #1B1AA7;
+}
+@media screen and (max-width: 960px) {
+    .mainContainer .mainContent{
+        padding: 0px;
+    }
+    
+    .navbarContainer{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbarMenu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background-color: #fff;
+        filter: drop-shadow(1px 1px);
+    }
+
+    .navbarMenu.active {
+        top: 8%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 20vh;
+        font-size: 30px;
+    }
+
+    #navbarLogo{
+        padding-left: 25px;
+
+    }
+
+    .navbarToggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #000;
+     
+    }
+
+    .navbarItem{
+        width: 100%;
+    }
+
+    .navbarLinks{
+        text-align: center;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 5%; /* Adjust this value according to your preference */
+        right: 5%;
+        transform: translateY(-50%); /* Adjust this value according to your preference */
+    }
+    
+
+
+    .navbarToggle .bar{
+     
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .mainContent #myFirstName, #myLastName {
+        margin: 0; /* Set margin to 0 only in mobile mode */
+    }
+
+    /* PROJECTS NAV */
+    .projectsNavbarContainer{
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+        position: sticky;
+     
+        
+    }
+
+    .projectsNavbarMenu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0px;
+        top: -1800px;
+        width: 100%;
+        position: absolute;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .navbarMenu.active {
+        top: 8%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 20vh;
+        font-size: 30px;
+    }
+    
+    .projectsNavbarMenu.active {
+        top: 110%;
+        opacity: 1;
+        transition: all 0.9s ease;
+        z-index: 99;
+        height: 20vh;
+        font-size: 30px;
+    }
+
+    #projectsNavbarLogo{
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .projectsNavbarToggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #000;
+     
+    }
+
+    .projectsNavbarItem{
+        height: 50px;
+        background-color: #fff;
+    }
+
+    .projectsNavbarLinks{
+        text-align: center;
+        width: 100%;
+        display: table;
+    }
+
+    #projectsMobile-menu {
+        position: absolute;
+        padding-top: 40px;
+        right: 5%;
+        transform: translateY(-50%); /* Adjust this value according to your preference */
+    }
+    
+
+    .projectsNavbarToggle .bar{
+        
+        display: block;
+        cursor: pointer;
+    }
+
+    #projectsMobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #projectsMobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #projectsMobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .mainContent #myFirstName, #myLastName {
+        margin: 0; /* Set margin to 0 only in mobile mode */
+    }
+    
+    /* hi */
+
+    .mainContent .nameContainer {
+        padding-left: 0; /* Adjust the padding for mobile mode */
+    }
+   
+
+    .nameAndTextContainer {
+        flex-direction: column;
+    }
+
+    
+
+    .mainContent .aboutText {
+        padding: 40px;
+    
+    }
+
+    .mainContent #resumeLink{
+        padding-left: 40px;
+    }
+
+    .mainContent .socialsFull{
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+
+}
+
+.mainContent{
+    padding: 50px;
+}
+
+#myFirstName {
+    color: #1B1AA7;
+    font-size: 90px;
+    text-align: left;
+    display: flex;
+    padding-top: 150px;
+    
+}
+
+#myLastName {
+    color: #1B1AA7;
+    font-size: 70px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.nameAndTextContainer {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    padding-bottom: 250px;
+}
+
+.nameContainer {
+    padding: 80px 0px 10px 80px; /* Adjust the left padding to move the link to the right */
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+
+/* Add this to your existing CSS */
+.aboutText {
+    align-items: center;
+    display: flex;
+    padding: 150px 150px 0px 60px; /* Add padding to the sides */
+    text-align: left; /* Center the text horizontally */
+    font-size: 20px;
+}
+
+.resumeLink {
+    color: blue; /* Set the color to blue */
+    text-decoration: underline; /* Add underline to indicate it's a link */
+    cursor: pointer; /* Show cursor pointer on hover */
+    display: inline; /* Make the link display inline */
+    font-size: 20px;
+}
+
+#resumeLink{
+    display: inline; /* Make the link display inline */
+    font-size: 20px;
+    text-align: left;
+
+    padding-left: 170px;
+}
+
+.socials {
+    text-decoration: none;
+    height: 100%;
+    font-size: 20px;
+    color: #1B1AA7;
+}
+
+.socials:hover {
+    color: #000;
+}
+
+.socialsFull{
+    padding-top: 10px;
+}
+
+.bigBlock{
+    padding: 900px;
+}
+
+.projectHeader{
+    font-size: 70px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
